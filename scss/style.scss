@@ -1,0 +1,127 @@
+$primary: #ff4400;
+$white: #ffffff;
+$background: #f0f0f0;
+
+$spacer: 20px;
+
+h1,
+h3 {
+  color: $primary;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__palmy {
+    background-image: url('../src/palmy.png');
+  }
+  &__jezero {
+    background-image: url('../src/jezero.png');
+  }
+  &__nakole {
+    background-image: url('../src/nakole.png');
+  }
+  &__lodicka {
+    background-image: url('../src/lodicka.png');
+  }
+  &__podkova {
+    background-image: url('../src/podkova.png');
+  }
+  &__zatoka {
+    background-image: url('../src/zatoka.png');
+  }
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 60px);
+  justify-items: center;
+  text-align: center;
+  color: $primary;
+
+  &__item {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  &__item--logo {
+    grid-column: 1/-1;
+  }
+
+  &__link {
+    color: $primary;
+    text-decoration: none;
+    margin: $spacer;
+    padding: 1rem 2rem;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
+
+.label {
+  padding: $spacer;
+  margin: $spacer 0;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+
+  &__price {
+    align-self: flex-start;
+    padding: 0.5rem;
+    margin: 0;
+    background-color: $primary;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  &__text--main {
+    margin-bottom: 0;
+  }
+}
+
+.info {
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: $background;
+    margin: $spacer/2 0;
+  }
+  &__icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    justify-self: center;
+  }
+  &__text {
+    margin-top: 0;
+  }
+}
+
+.news {
+  &__date {
+    color: #888888;
+  }
+
+  &__item {
+    padding: $spacer;
+    background-color: $background;
+    margin: $spacer/2 0;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: $spacer 0 0 0;
+  background-color: #444444;
+  color: #ffffff;
+}
