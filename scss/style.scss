@@ -52,10 +52,10 @@ h2 {
   &__link {
     color: $primary;
     text-decoration: none;
-
     padding: $spacer $spacer/2;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $white;
       background-color: $primary;
     }
@@ -64,7 +64,8 @@ h2 {
   &__link--logo {
     padding: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: transparent;
     }
   }
