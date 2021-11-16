@@ -10,6 +10,14 @@ body {
   font-weight: 400;
   padding: $spacer;
   margin: 0;
+
+  @media screen and (min-width: 960px) {
+    & {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 h1,
@@ -395,6 +403,12 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: $spacer;
   margin: $spacer/2 + $spacer 0;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (min-width: 768px) {
     & {
