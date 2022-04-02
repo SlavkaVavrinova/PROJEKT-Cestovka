@@ -162,6 +162,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .reverse {
+    grid-column: -3/-1;
+  }
+}
+
 .textMain p {
   font-family: "Open Sans", sans-serif;
 }
